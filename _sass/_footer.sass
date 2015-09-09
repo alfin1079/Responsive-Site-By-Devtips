@@ -1,0 +1,39 @@
+footer
+	background: url(img/header.jpg) center center
+	background-size: cover
+
+
+	.lockup
+		padding: 50px 30px
+		+clearfix
+
+		.logo
+			+size(50px)
+			float: left
+			margin-right: 30px
+
+			path
+				fill: rgba(0,0,0,0.3)
+
+		.content-wrap
+			padding-top: 10px
+			float: left
+
+			.copyright
+				margin: 0
+				text-transform: uppercase
+				font-size: 12px
+				color: rgba(0,0,0,0.4)
+
+			a
+				@extend %small-bold
+				color: rgba(0,0,0,0.5)
+				display: inline-block
+				margin-right: 30px
+
+				&:hover
+					color: rgba(0,0,0,7)
+
++font-face("bebas", "fonts/BebasNeue",null,null,$file-formats: otf)
+
+
