@@ -1,12 +1,11 @@
-<header style="background-image: url(css/img/{{ site.logo }}), url(css/img/{{ site.bg }});">
+<header>
 
   <nav>
-    <a href="">About Me</a>
-    <a href="">Works</a>
-    <a href="">Clients</a>
-    <a href="">Contact</a>
+    {% for menu in site.data.portfolio.menu %}
+      <a href="{{ menu.url }}">{{ menu.name }}</a>
+    {% endfor %}
   </nav>
 
-  <h1><span>MAS ALFIN</span></h1>
-  <p class="kicker">Thinker // Designer // Developer</p>
+  <h1><span>{{ site.data.portfolio.titleSquare }}</span></h1>
+  <p class="kicker">{{ site.data.portfolio.kicker }}</p>
 </header>

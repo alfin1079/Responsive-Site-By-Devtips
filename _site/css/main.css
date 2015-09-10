@@ -57,6 +57,7 @@ h3 div {
   margin: 5px auto; }
 
 header, footer {
+  background-image: url(img/logo.svg), url(img/header.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: 50px 50px, cover;
   background-position: 30px 50px, 50% 50%;
@@ -140,6 +141,7 @@ header {
   .face-lockup .face-img {
     height: 200px;
     width: 200px;
+    background-image: url(img/avatar.jpg);
     background-position: center center;
     background-size: cover;
     border-top-left-radius: 50%;

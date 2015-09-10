@@ -1,0 +1,26 @@
+#Portfolio Website Setting
+titleSquare: MAS ALFIN
+kicker: Thinker // Designer // Developer
+email: muhammad.alfin1079@gmail.com
+
+#Menu Item List
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+- {name: Clients, url: '#clients'}
+- {name: About Me, url: '#contact'}
+
+
+#Skill List
+skills:
+- {name: Communication, value: 7, style: skill-unit}
+- {name: Organization, value: 7, style: skill-unit-right}
+- {name: Learning, value: 8, style: skill-unit}
+- {name: Vector, value: 6, style: skill-unit-right}
+- {name: UI/UX Designer, value: 7, style: skill-unit}
+- {name: Web Programming, value: 8, style: skill-unit-right}
+
+#Change the Site default images and content here!
+avatar: avatar.jpg
+bg: header.jpg
+logo: logo.svg

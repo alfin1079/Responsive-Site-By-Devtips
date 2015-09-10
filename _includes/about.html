@@ -1,8 +1,8 @@
 <section>
-	<h3>About Myself<div></div></h3>
+	<h3 id="about-me">About Myself<div></div></h3>
 
 	<div class="face-lockup">
-		<div class="face-img" style="background-image: url(css/img/{{ site.avatar }});"></div>
+		<div class="face-img"></div>
 
 		<div class="icon-pencil"><div>{% include icons/icon-pencil.html %}</div></div>
 		<div class="icon-mouse"><div>{% include icons/icon-mouse.html %}</div></div>
@@ -18,53 +18,15 @@
 	<h3>Skills<div></div></h3>
 
 	<div class="skill-lockup">
-		<div class="skill-unit">
-			<div class="skill-label">Communication</div>
-			<div class="skill-icons skill-7">
+	{% for skill in site.data.portfolio.skills %}
+		<div class="{{ skill.style }}">
+			<div class="skill-label">{{ skill.name }}</div>
+			<div class="skill-icons skill-{{ skill.value}}">
 				<span></span><span></span><span></span><span></span><span></span>
 				<span></span><span></span><span></span><span></span><span></span>
 			</div>
 		</div>
-
-		<div class="skill-unit-right">
-			<div class="skill-label">Organization</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span>
-				<span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Learning</div>
-			<div class="skill-icons skill-8">
-				<span></span><span></span><span></span><span></span><span></span>
-				<span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit-right">
-			<div class="skill-label">Vector</div>
-			<div class="skill-icons skill-6">
-				<span></span><span></span><span></span><span></span><span></span>
-				<span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">UI/UX Design</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span>
-				<span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit-right">
-			<div class="skill-label">Web Programming</div>
-			<div class="skill-icons skill-8">
-				<span></span><span></span><span></span><span></span><span></span>
-				<span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>  
+	{% endfor %}  
 
 	</div>
 </section>

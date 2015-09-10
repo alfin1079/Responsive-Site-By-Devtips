@@ -1,14 +1,13 @@
-<footer style="background-image: url(css/img/{{ site.logo }}), url(css/img/{{ site.bg }});">
+<footer id="footer">
 
   <div class="lockup">
 
     <div class="content-wrap">
 
       <nav>
-        <a href="">About Me</a>
-        <a href="">Work</a>
-        <a href="">Clients</a>
-        <a href="">Contact</a>
+      {% for menu in site.data.portfolio.menu %}
+        <a href="{{ menu.url }}">{{ menu.name }}</a>
+      {% endfor %}
       </nav>
 
       <p class="copyright">All content copyright 2015</p>
