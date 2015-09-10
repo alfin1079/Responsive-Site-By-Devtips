@@ -11,14 +11,9 @@ body
 
 header
 	height: 450px
-	background: url(img/header.jpg) center center
-	background-size: cover
+	@extend %bg-hero
+	background-position: 50px 20px, 50% 50%
 	
-
-	.logo
-		+size(50px)
-		float: left
-		margin: 10px 0 0 30px
 
 	path
 		fill: rgba(0,0,0,0.4)
