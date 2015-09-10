@@ -10,8 +10,8 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 avatar: avatar.jpg
+bg: header.jpg
 logo: logo.svg
-bg: header.jpg 
 
 # Build settings
 markdown: kramdown
