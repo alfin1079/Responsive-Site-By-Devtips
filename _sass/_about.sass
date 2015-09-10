@@ -1,24 +1,13 @@
-h3
-	@extend %section-title
-
-	&::after
-		@extend %section-title-purple
-
-	div
-		@extend %section-title-grey
-
-
-
 .face-lockup
 	max-width: 780px
 	+display(flex)
 	margin: 0 auto
 	+align-items(center)
-	+justify-content(space-around)
+	+justify-content(space-between)
 
 	.face-img
 		+size(200px)
-		background: url(img/avatar.jpg) center center
+		background-position: center center
 		background-size: cover
 		+border-all-radius(50%)   //custom library by Alfin
 		+order(3)
@@ -68,7 +57,7 @@ h3
 	font-size: 20px
 	text-align: center
 	font-weight: 300
-	color: #999
+	color: #4d4d4d
 
 .skill-lockup
 	max-width: 600px
