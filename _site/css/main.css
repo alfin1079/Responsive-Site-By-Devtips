@@ -4,6 +4,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   vertical-align: baseline; }
 
+a {
+  text-decoration: none; }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -54,6 +57,12 @@ h3 div {
   height: 3px;
   width: 150px;
   background: #e9e9e9;
+  margin: 5px auto; }
+
+h3 div.alt-h3 {
+  height: 3px;
+  width: 150px;
+  background: #fff;
   margin: 5px auto; }
 
 header, footer {
@@ -214,10 +223,11 @@ header {
   max-width: 620px;
   padding: 0px 15px;
   margin: 50px auto;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   font-weight: 300;
-  color: #4d4d4d; }
+  color: #4d4d4d;
+  font-family: champagne; }
 
 .skill-lockup {
   max-width: 600px;
@@ -229,6 +239,8 @@ header {
     content: "";
     display: table; }
   .skill-lockup .skill-unit {
+    font-family: champagne;
+    font-weight: bold;
     width: 300px;
     float: left; }
   .skill-lockup .skill-unit-right {
@@ -278,6 +290,87 @@ header {
     .skill-lockup .skill-unit {
       width: 270px;
       text-align: center; } }
+.alt-section {
+  background: #e9e9e9; }
+
+.thumb-container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-bottom: 100px; }
+  .thumb-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .thumb-container .thumb-unit {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-top: 15%;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (max-width: 760px) {
+      .thumb-container .thumb-unit {
+        width: 50%;
+        padding-top: 25%; } }
+    .thumb-container .thumb-unit .thumb-overlay {
+      position: absolute;
+      top: 100%;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      background: rgba(37, 2, 80, 0.9);
+      text-align: center;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: distribute;
+      -moz-box-pack: distribute;
+      box-pack: distribute;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+      -ms-flex-pack: distribute; }
+      .thumb-container .thumb-unit .thumb-overlay strong {
+        display: block;
+        padding: 0px 20px;
+        color: white;
+        font-weight: 300;
+        font-size: 24px;
+        font-family: champagne;
+        line-height: 1.2; }
+      .thumb-container .thumb-unit .thumb-overlay .zoom-icon {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto; }
+        .thumb-container .thumb-unit .thumb-overlay .zoom-icon path {
+          fill: #fff; }
+    .thumb-container .thumb-unit:hover .thumb-overlay {
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      left: 0px; }
+
 footer .lockup {
   padding: 50px 30px; }
   footer .lockup::after {
@@ -302,4 +395,7 @@ footer .lockup {
 
 @font-face {
   font-family: "bebas";
-  src: url("fonts/BebasNeue.otf") format("opentype"); }
+  src: url("fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue-webfont.woff2") format("woff2"), url("fonts/bebasneue-webfont.woff") format("woff"), url("fonts/bebasneue-webfont.ttf") format("truetype"), url("fonts/bebasneue-webfont.svg#bebas") format("svg"); }
+@font-face {
+  font-family: "champagne";
+  src: url("fonts/champagne__limousines-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne__limousines-webfont.woff2") format("woff2"), url("fonts/champagne__limousines-webfont.woff") format("woff"), url("fonts/champagne__limousines-webfont.ttf") format("truetype"), url("fonts/champagne__limousines-webfont.svg#champagne") format("svg"); }

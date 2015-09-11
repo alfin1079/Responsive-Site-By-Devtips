@@ -20,6 +20,16 @@ skills:
 - {name: UI/UX Designer, value: 7, style: skill-unit}
 - {name: Web Programming, value: 8, style: skill-unit-right}
 
+works:
+- {name: 404 Design, image: proj-1.jpg}
+- {name: E-Commerce Dashboard, image: proj-2.jpg}
+- {name: Communication, image: proj-1.jpg}
+- {name: Communication, image: proj-2.jpg}
+- {name: Communication, image: proj-2.jpg}
+- {name: Communication, image: proj-1.jpg}
+- {name: Communication, image: proj-2.jpg}
+- {name: Communication, image: proj-1.jpg}
+
 #Change the Site default images and content here!
 avatar: avatar.jpg
 bg: header.jpg
