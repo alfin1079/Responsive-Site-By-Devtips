@@ -1,17 +1,32 @@
-<section class='alt-section'>
+<section class='alt-section section-work'>
 
 	<h3 id="work">Work<div class="alt-h3"></div></h3>
 
-	<div class="thumb-container">
-
-		{% for work in site.data.portfolio.works %}
-		<a href="" class="thumb-unit" style="background-image: url(css/img/work/{{ work.image }})">
-			<div class="thumb-overlay">
-				<strong>{{ work.name}}</strong>
+	<div class="work-belt">
+		<div class="thumb-wrap">
+		<div class="thumb-container">
+			{% for work in site.data.portfolio.works %}
+			<div class="thumb-unit" style="background-image: url(css/img/work/{{ work.image }})">
+				<div class="thumb-overlay">
+					<strong>{{ work.name}}</strong>
+				</div>
 			</div>
-		</a>
-		{% endfor %}
+			{% endfor %}
+		</div>
+		</div>
 
+		<div class="work-wrap">
+		<div class="work-container">
+			<div class="work-return">{% include icons/icon-back.html %}</div>
+			<h4>Do Work</h4>
+			<img src="css/img/work/proj-1.jpg">
+			<div style="width: 600px; height: 500px; background: #ccc;"></div>
+			<p>a web developer/designer based in Yogyakarta</p>
+			<div style="width: 600px; height: 500px; background: #ccc;"></div>
+			<p>a web developer/designer based in Yogyakarta</p>
+			<div style="width: 600px; height: 500px; background: #ccc;"></div>
+			<p>a web developer/designer based in Yogyakarta</p>
+		</div>
+		</div>
 	</div>
-
 </section>

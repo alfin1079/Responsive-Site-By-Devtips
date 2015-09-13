@@ -1,5 +1,15 @@
-.alt-section
-	background: $abu
+.section-work
+	overflow-x: hidden
+
+.work-belt
+	width: 200%
+	position: relative
+	left: 0%
+	+transition(all 800ms)
+
+.thumb-wrap, .work-wrap
+	width: 50%
+	float: left
 
 .thumb-container
 	max-width: 960px
@@ -13,26 +23,31 @@
 		float: left
 		position: relative
 		padding-top: 15%
-		overflow: hidden
+		cursor: pointer
+		background:
+			position: center center
+			repeat: no-repeat
+			size: cover
+		+perspective(300)
 
 		@media screen and (max-width: 760px)
 			width: 50%
 			padding-top: 25%
 
-		background:
-			position: center center
-			repeat: no-repeat
-			size: cover
+		
 
 		.thumb-overlay
-			+position(absolute, 100% 0px null 0px)
+			+position(absolute, 0% 0px null 0px)
 			height: 100%
 			background: fade-out($ungu, 0.1)
 			text-align: center
-			+transition
 			+display(flex)
 			+align-items(center)
 			+justify-content(space-around)
+			+transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
+			opacity: 0
+			+transition(opacity, 300ms, ease-in, 300ms)
+			
 
 			strong
 				display: block
@@ -51,6 +66,44 @@
 					fill: #fff
 
 		&:hover .thumb-overlay
-			+position(absolute, 0% 0px null 0px)
+			@extend %thumb-animation
+			opacity: 1
 
+.work-container
+	max-width: 600px
+	margin: 0px auto
+	position: relative
+	display: none
 
+	.work-return 
+		+size(30px)
+		cursor: pointer
+		opacity: 0.5
+		+position(absolute, null null null -60px)
+
+		path
+			fill: $ungu
+
+		&:hover
+			opacity: 1
+
+	h4
+		color: $ungu
+		font-weight: bold
+		font-size: 28px
+		font-family: champagne
+		line-height: 1.2
+		text-transform: uppercase
+		margin: 0px 0px 20px
+
+	img
+		max-width: 100%
+
+@media (max-width: 740px)
+	.work-container
+
+		.work-return 
+			left: 0px
+
+		h4
+			margin-left: 60px
