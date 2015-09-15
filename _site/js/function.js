@@ -1,8 +1,7 @@
 $(function(){
 	smoothScrool(1000);
-	workBelt();
+	workbelt();
 })
-
 
 // SmoothScrool function is applied from the document ready function
 function smoothScrool(duration){
@@ -18,15 +17,15 @@ function smoothScrool(duration){
 	});
 }
 
-// Functon for animate portfolio on work section
-function workBelt(){
-	$('.thumb-unit').click(function(){
-		$('.work-belt').css('left','-100%');
+function workbelt(){
+	$(".thumb-unit").click(function(){
+		$(".work-belt").css('left','-100%');
 		$('.work-container').show();
 	});
 
-	$('.work-return').click(function(){
-		$('.work-belt').css('left','0%');
-		$('.work-container').hide(800);
+	$(".work-return").click(function(){
+		$(".work-belt").css('left','0%');
+		$('.work-container').hide(800); 
 	});
 }
+
