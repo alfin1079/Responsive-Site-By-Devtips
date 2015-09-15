@@ -18,6 +18,7 @@ function smoothScrool(duration){
 	});
 }
 
+// Functon for animate portfolio on work section
 function workBelt(){
 	$('.thumb-unit').click(function(){
 		$('.work-belt').css('left','-100%');
