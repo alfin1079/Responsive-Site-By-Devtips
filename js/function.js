@@ -17,6 +17,7 @@ function smoothScrool(duration){
 	});
 }
 
+
 function workbelt(){
 	$(".thumb-unit").click(function(){
 		$(".work-belt").css('left','-100%');
