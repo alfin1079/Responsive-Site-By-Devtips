@@ -21,14 +21,14 @@ skills:
 - {name: Web Programming, value: 8, style: skill-unit-right}
 
 works:
-- {name: 404 Design, image: proj-1.jpg}
-- {name: E-Commerce Dashboard, image: proj-2.jpg}
-- {name: Communication, image: proj-1.jpg}
-- {name: Communication, image: proj-2.jpg}
-- {name: Communication, image: proj-2.jpg}
-- {name: Communication, image: proj-1.jpg}
-- {name: Communication, image: proj-2.jpg}
-- {name: Communication, image: proj-1.jpg}
+- {name: 404 Design, image: proj-1}
+- {name: E-Commerce Dashboard, image: proj-2}
+- {name: Communication, image: proj-1}
+- {name: Communication, image: proj-2}
+- {name: Communication, image: proj-2}
+- {name: Communication, image: proj-1}
+- {name: Communication, image: proj-2}
+- {name: Communication, image: proj-1}
 
 #Change the Site default images and content here!
 avatar: avatar.jpg
