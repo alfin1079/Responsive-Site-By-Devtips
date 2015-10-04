@@ -1,0 +1,16 @@
+<section class='alt-section section-contact'>
+
+	<h3 id="contact">Work<div class="alt-h3"></div></h3>
+
+	<div class="social-links">
+		{% for contact in site.data.portfolio.contacts %}
+		<a href="{{ contact.link }}" class="icon-{{ contact.icon }}" target="_blank"></a>
+		{% endfor %}
+	</div>
+
+	<div class="bar"></div>	
+
+	<a href="mailto:{{ site.data.portfolio.email }}" class="biglink">{{ site.data.portfolio.email }}</a>
+	
+
+</section>

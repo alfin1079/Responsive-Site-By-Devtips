@@ -8,7 +8,7 @@ menu:
 - {name: About Me, url: '#about-me'}
 - {name: Work, url: '#work'}
 - {name: Clients, url: '#clients'}
-- {name: About Me, url: '#contact'}
+- {name: Contact, url: '#contact'}
 
 
 #Skill List
@@ -20,6 +20,7 @@ skills:
 - {name: UI/UX Designer, value: 7, style: skill-unit}
 - {name: Web Programming, value: 8, style: skill-unit-right}
 
+#works List
 works:
 - {name: 404 Design, image: proj-1}
 - {name: E-Commerce Dashboard, image: proj-2}
@@ -29,6 +30,22 @@ works:
 - {name: Communication, image: proj-1}
 - {name: Communication, image: proj-2}
 - {name: Communication, image: proj-1}
+
+#Clients List
+clients:
+- {avatar: 'client-ava-1.jpg', name: 'Wahyu Budi S', title: 'Owner Of Summer Potatoes', testimonial: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi</p>', logo: 'logo.png'}
+- {avatar: 'client-ava-2.jpg', name: 'Jihad Alam Akbar', title: 'Owner Of Bebek Bejo', testimonial: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi</p>', logo: 'logo.png'}
+- {avatar: 'client-ava-3.jpg', name: 'Nyayu Ferlina', title: 'CEO Berbagi Bersama Mereka', testimonial: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi</p>', logo: 'logo.png'}
+- {avatar: 'client-ava-4.jpg', name: 'Hendra Dwi Setyawan', title: 'Owner Of Clown Store', testimonial: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi</p>', logo: 'logo.png'}
+
+#Contact List
+contacts:
+- {icon: 'twitter', link: 'https://twitter.com/masAlfin'}
+- {icon: 'facebook', link: 'https://www.facebook.com/muhammad.alfin.73'}
+- {icon: 'github', link: 'https://github.com/alfin1079'}
+- {icon: 'instagram', link: 'https://instagram.com/mas_alfin'}
+- {icon: 'linkedin', link: 'https://id.linkedin.com/pub/muhammad-alfin/47/442/1b1'}
+#Can be twitter / facebook / github / instagram / linkedin / whatsapp / youtube-play / dropbox /dribbble / vine / behance
 
 #Change the Site default images and content here!
 avatar: avatar.jpg

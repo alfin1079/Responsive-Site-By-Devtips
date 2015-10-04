@@ -10,9 +10,9 @@ body
 		family: arial
 
 header
-	height: 450px
 	@extend %bg-hero
 	background-position: 50px 20px, 50% 50%
+	padding-bottom: 70px
 	
 
 	path
@@ -20,7 +20,7 @@ header
 
 	nav
 		float: right
-		margin: 30px 30px 0 0
+		padding: 30px 30px 0 0
 
 		a
 			display: inline-block
@@ -60,6 +60,20 @@ header
 		margin-top: 10px
 
 
-
+@media (max-width: 640px)
+	header
+		background-position: 50% 20px, 50% 50%
 			
-	
+		nav
+			float: none
+			text-align: center
+			padding-top: 80px
+
+		h1
+			padding-top: 40px
+
+			span 
+				border: white solid 7px
+
+		.kicker 
+			font-size: 14px

@@ -1,0 +1,63 @@
+.section-contact
+	text-align: center
+	padding-bottom: 80px 
+
+.social-links
+	max-width: 700px
+	margin: 0px auto 50px
+	+display(flex)
+	+justify-content(space-around)
+	+flex-wrap(wrap)
+
+	a 
+		display: block 
+		background: $ungu
+		+size(50px)
+		line-height: 50px
+		color: white
+		border-radius: 50%
+		font-size: 28px
+		margin: 20px
+		+transition()
+
+		&:hover
+			+transform(scale(1.2))
+
+.bar
+	width: 250px
+	height: 0px
+	border-top: 4px solid $ungu
+	margin: 0px auto 50px
+
+.biglink
+	display: inline-block
+	font:
+		size: 72px
+		family: "champagne"
+		weight: 400
+	color: $ungu
+	line-height: 1
+	width: 100%
+	margin: 0 auto
+
+@media (max-width: 920px )
+	.biglink
+		font-size: 64px
+
+@media (max-width: 820px )
+	.biglink
+		font-size: 52px
+
+@media (max-width: 660px )
+	.biglink
+		font-size: 42px
+
+@media (max-width: 540px )
+	.biglink
+		font-size: 32px
+
+@media (max-width: 410px )
+	.biglink
+		font-size: 24px
+
+
